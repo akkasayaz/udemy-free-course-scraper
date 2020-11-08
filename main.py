@@ -1,6 +1,7 @@
 from logger import Udemy
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from getpass import getpass
 import time
 
 mail = input("Enter your e-mail")
@@ -18,17 +19,12 @@ email = browser.find_element_by_name("email")
 
 sifre = browser.find_element_by_name("password")
 
-user.login(email, sifre)
+user.login(email, sifre) 
 
 browser.get('https://www.udemyfreebies.com/course-category/development')
 
 coup_but = browser.find_elements_by_class_name('button-icon')
 
-browser = webdriver.Chrome('chromedriver.exe')
-
-browser.get('https://www.udemyfreebies.com/course-category/development')
-
-coup_but = browser.find_elements_by_class_name('button-icon')
 
 for course in coup_but:
 	course.click()
