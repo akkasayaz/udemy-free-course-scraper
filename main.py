@@ -15,9 +15,9 @@ browser = webdriver.Chrome("chromedriver.exe")
 browser.get("https://www.udemy.com/join/login-popup/")
 time.sleep(3)
 
-email = browser.find_element_by_name("email")
+mail = browser.find_element_by_name("email")
 
-sifre = browser.find_element_by_name("password")
+password = browser.find_element_by_name("password")
 
 user.login(email, sifre) 
 
