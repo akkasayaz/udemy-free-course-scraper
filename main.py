@@ -36,5 +36,4 @@ for course in coup_but:
 	cart.click()
 	browser.get('https://www.udemyfreebies.com/course-category/development')
 	time.sleep(1)	
-browser.get('https://www.udemy.com/cart/checkout/')
-browser.find_element_by_class_name('ellipsis btn btn-lg btn-primary btn-block').click()
+user.buy()
