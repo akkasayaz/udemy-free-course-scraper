@@ -36,4 +36,4 @@ for course in coup_but:
 	cart.click()
 	browser.get('https://www.udemyfreebies.com/course-category/development')
 	time.sleep(1)	
-user.buy()
+user.buy(browser)
